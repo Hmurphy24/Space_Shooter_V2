@@ -253,7 +253,7 @@ player_mask = pygame.mask.from_surface(player_surface_rotated)
 player_mask_image = player_mask.to_surface()
 player_mask_image.set_colorkey((0, 0, 0))
 
-player_movement = pygame.mixer.Sound('select_2-96163.mp3')
+player_movement = pygame.mixer.Sound('audio/select_2-96163.mp3')
 player_movement.set_volume(0.4)
 
 player_health = 100
@@ -276,13 +276,13 @@ player_bullet_speed = 10
 
 # Collision related sounds
 
-bullet_sound = pygame.mixer.Sound('laser-gun-81720.mp3')
+bullet_sound = pygame.mixer.Sound('audio/laser-gun-81720.mp3')
 bullet_sound.set_volume(0.3)
 
-player_hitting_enemy = pygame.mixer.Sound('8-bit-fireball-81148.mp3')
+player_hitting_enemy = pygame.mixer.Sound('audio/8-bit-fireball-81148.mp3')
 player_hitting_enemy.set_volume(0.5)
 
-player_getting_hit = pygame.mixer.Sound('vibrating-thud-39536.mp3')
+player_getting_hit = pygame.mixer.Sound('audio/vibrating-thud-39536.mp3')
 player_getting_hit.set_volume(1.0)
 
 # Health Powerup
@@ -298,7 +298,7 @@ health_powerup_mask = pygame.mask.from_surface(health_powerup_surface_scaled)
 health_powerup_mask_image = health_powerup_mask.to_surface()
 health_powerup_mask_image.set_colorkey((0, 0, 0))
 
-powerup_sound = pygame.mixer.Sound('video-game-powerup-38065 copy.mp3')
+powerup_sound = pygame.mixer.Sound('audio/video-game-powerup-38065 copy.mp3')
 powerup_sound.set_volume(0.4)
 
 health_powerup_speed = 7.5
@@ -840,7 +840,7 @@ while True:
 
                     pygame.mixer.music.stop()
 
-                    mixer.music.load('beyond-video-game-soundtrack-side-scrolling-shooter-arcade-147696.mp3')
+                    mixer.music.load('audio/beyond-video-game-soundtrack-side-scrolling-shooter-arcade-147696.mp3')
                     pygame.mixer.music.play(-1)  # Plays the game music on loop
                     pygame.mixer.music.set_volume(0.3)  # Sets the music volume
 
